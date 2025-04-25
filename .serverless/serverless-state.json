@@ -129,7 +129,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-us-east-1-ba990dcd-bd9c",
-                "S3Key": "serverless/rimac-nest-serverless/production/1745527549103-2025-04-24T20:45:49.103Z/api.zip"
+                "S3Key": "serverless/rimac-nest-serverless/production/1745567056981-2025-04-25T07:44:16.981Z/api.zip"
               },
               "Handler": "dist/lambda.handler",
               "Runtime": "nodejs18.x",
@@ -155,14 +155,14 @@
               "ApiLogGroup"
             ]
           },
-          "ApiLambdaVersiona8wFMAHV70eZPUBihTawt7l9V8y5hkiBu0WXfIq8g": {
+          "ApiLambdaVersions3Qjz2JCyfRtRemvXyagpwbsMXqKs5mNbSTWhKIsIAU": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "ApiLambdaFunction"
               },
-              "CodeSha256": "7biX8rviHMo24rL/Sab/8b5qX/LWtQBWKnmDsptSJGU="
+              "CodeSha256": "betCtx8e0p93vzsP+iIm4r3qIZ3c6vje/GXMdzFmT2M="
             }
           },
           "ApiGatewayRestApi": {
@@ -287,7 +287,7 @@
               "ApiLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1745527510718": {
+          "ApiGatewayDeployment1745567011267": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -375,7 +375,7 @@
           "ApiLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "ApiLambdaVersiona8wFMAHV70eZPUBihTawt7l9V8y5hkiBu0WXfIq8g"
+              "Ref": "ApiLambdaVersions3Qjz2JCyfRtRemvXyagpwbsMXqKs5mNbSTWhKIsIAU"
             },
             "Export": {
               "Name": "sls-rimac-nest-serverless-production-ApiLambdaFunctionQualifiedArn"
@@ -450,7 +450,7 @@
         "timeout": 30,
         "runtime": "nodejs18.x",
         "vpc": {},
-        "versionLogicalId": "ApiLambdaVersiona8wFMAHV70eZPUBihTawt7l9V8y5hkiBu0WXfIq8g"
+        "versionLogicalId": "ApiLambdaVersions3Qjz2JCyfRtRemvXyagpwbsMXqKs5mNbSTWhKIsIAU"
       }
     },
     "resources": {
@@ -508,7 +508,7 @@
         ],
         "artifactsS3KeyDirname": "serverless/rimac-nest-serverless/production/code-artifacts",
         "deploymentBucket": "serverless-framework-deployments-us-east-1-ba990dcd-bd9c",
-        "artifactDirectoryName": "serverless/rimac-nest-serverless/production/1745527549103-2025-04-24T20:45:49.103Z"
+        "artifactDirectoryName": "serverless/rimac-nest-serverless/production/1745567056981-2025-04-25T07:44:16.981Z"
       },
       "custom": {
         "$ref": "$[\"service\"][\"custom\"]"
@@ -523,7 +523,7 @@
   },
   "package": {
     "individually": true,
-    "artifactDirectoryName": "serverless/rimac-nest-serverless/production/1745527549103-2025-04-24T20:45:49.103Z",
+    "artifactDirectoryName": "serverless/rimac-nest-serverless/production/1745567056981-2025-04-25T07:44:16.981Z",
     "artifact": ""
   }
 }
